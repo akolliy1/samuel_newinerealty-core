@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Script from 'next/script'
-import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Topbar from '../Components/home/Topbar/Topbar'
 import Navbar from '../Components/home/Navbar/Navbar'
@@ -18,8 +17,6 @@ import Teams from '../Components/home/Teams/Teams'
 import Testimonial from '../Components/home/Testimonial/Testimonial'
 import Footer from '../Components/home/Footer/Footer'
 
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -67,7 +64,7 @@ export default function Home() {
         {/* <Script src="mail/jqBootstrapValidation.min.js"></Script>
         <Script src="mail/contact.js"></Script> */}
 
-        <Script src="../public/js/main.js"></Script>
+        <Script src="../styles/js/main.js"></Script>
       </main>
     </>
   )

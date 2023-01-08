@@ -6,7 +6,7 @@ const Carousel = () => (
     <div id="header-carousel" className="carousel slide" data-ride="carousel">
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <Image width="1000" height="100" className="w-[100%]" src="/img/carousel-1.jpg" alt="Image" />
+          <Image width="1000" height="100" className="w-100" src="/img/carousel-1.jpg" alt="Image" />
           <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
             <div className="p-3 max-w-[900px]">
               <h4 className="text-white text-uppercase mb-md-3">
@@ -22,7 +22,7 @@ const Carousel = () => (
           </div>
         </div>
         <div className="carousel-item">
-          <Image width="1000" height="100" className="w-[100%]" src="/img/carousel-2.jpg" alt="Image" />
+          <Image width="1000" height="100" className="w-100" src="/img/carousel-2.jpg" alt="Image" />
           <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
             <div className="p-3 max-w-[900px]">
               <h4 className="text-white text-uppercase mb-md-3">

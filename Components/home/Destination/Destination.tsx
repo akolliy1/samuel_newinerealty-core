@@ -13,7 +13,7 @@ const Destination = () => (
       <div className="row">
         <div className="col-lg-4 col-md-6 mb-4">
           <div className="destination-item position-relative overflow-hidden mb-2">
-            <Image width="100" height="100" className="img-fluid w-[100%]" src="/img/destination-1.jpg" alt="" />
+            <Image width="100" height="100" className="img-fluid w-100" src="/img/destination-1.jpg" alt="" />
             <a
               className="destination-overlay text-white text-decoration-none"
               href=""
@@ -25,7 +25,7 @@ const Destination = () => (
         </div>
         <div className="col-lg-4 col-md-6 mb-4">
           <div className="destination-item position-relative overflow-hidden mb-2">
-            <Image width="100" height="100" className="img-fluid w-[100%]" src="/img/destination-2.jpg" alt="" />
+            <Image width="100" height="100" className="img-fluid w-100" src="/img/destination-2.jpg" alt="" />
             <a
               className="destination-overlay text-white text-decoration-none"
               href=""
@@ -37,7 +37,7 @@ const Destination = () => (
         </div>
         <div className="col-lg-4 col-md-6 mb-4">
           <div className="destination-item position-relative overflow-hidden mb-2">
-            <Image width="100" height="100" className="img-fluid w-[100%]" src="/img/destination-3.jpg" alt="" />
+            <Image width="100" height="100" className="img-fluid w-100" src="/img/destination-3.jpg" alt="" />
             <a
               className="destination-overlay text-white text-decoration-none"
               href=""
@@ -49,7 +49,7 @@ const Destination = () => (
         </div>
         <div className="col-lg-4 col-md-6 mb-4">
           <div className="destination-item position-relative overflow-hidden mb-2">
-            <Image width="100" height="100" className="img-fluid w-[100%]" src="/img/destination-4.jpg" alt="" />
+            <Image width="100" height="100" className="img-fluid w-100" src="/img/destination-4.jpg" alt="" />
             <a
               className="destination-overlay text-white text-decoration-none"
               href=""
@@ -61,7 +61,7 @@ const Destination = () => (
         </div>
         <div className="col-lg-4 col-md-6 mb-4">
           <div className="destination-item position-relative overflow-hidden mb-2">
-            <Image width="100" height="100" className="img-fluid w-[100%]" src="/img/destination-5.jpg" alt="" />
+            <Image width="100" height="100" className="img-fluid w-100" src="/img/destination-5.jpg" alt="" />
             <a
               className="destination-overlay text-white text-decoration-none"
               href=""
@@ -73,7 +73,7 @@ const Destination = () => (
         </div>
         <div className="col-lg-4 col-md-6 mb-4">
           <div className="destination-item position-relative overflow-hidden mb-2">
-            <Image width="100" height="100" className="img-fluid w-[100%]" src="/img/destination-6.jpg" alt="" />
+            <Image width="100" height="100" className="img-fluid w-100" src="/img/destination-6.jpg" alt="" />
             <a
               className="destination-overlay text-white text-decoration-none"
               href=""

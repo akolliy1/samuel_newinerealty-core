@@ -11,7 +11,7 @@ const Packages = () => (
       <div className="row">
         <div className="col-lg-4 col-md-6 mb-4">
           <div className="package-item bg-white mb-2">
-            <Image width="100" height="100" className="img-fluid w-[100%]" src="/img/package-1.jpg" alt="" />
+            <Image width="100" height="100" className="img-fluid w-100" src="/img/package-1.jpg" alt="" />
             <div className="p-4">
               <div className="d-flex justify-content-between mb-3">
                 <small className="m-0">
@@ -42,7 +42,7 @@ const Packages = () => (
         </div>
         <div className="col-lg-4 col-md-6 mb-4">
           <div className="package-item bg-white mb-2">
-            <Image width="100" height="100" className="img-fluid w-[100%]" src="/img/package-2.jpg" alt="" />
+            <Image width="100" height="100" className="img-fluid w-100" src="/img/package-2.jpg" alt="" />
             <div className="p-4">
               <div className="d-flex justify-content-between mb-3">
                 <small className="m-0">
@@ -73,7 +73,7 @@ const Packages = () => (
         </div>
         <div className="col-lg-4 col-md-6 mb-4">
           <div className="package-item bg-white mb-2">
-            <Image width="100" height="100" className="img-fluid w-[100%]" src="/img/package-3.jpg" alt="" />
+            <Image width="100" height="100" className="img-fluid w-100" src="/img/package-3.jpg" alt="" />
             <div className="p-4">
               <div className="d-flex justify-content-between mb-3">
                 <small className="m-0">
@@ -104,7 +104,7 @@ const Packages = () => (
         </div>
         <div className="col-lg-4 col-md-6 mb-4">
           <div className="package-item bg-white mb-2">
-            <Image width="100" height="100" className="img-fluid w-[100%]" src="/img/package-4.jpg" alt="" />
+            <Image width="100" height="100" className="img-fluid w-100" src="/img/package-4.jpg" alt="" />
             <div className="p-4">
               <div className="d-flex justify-content-between mb-3">
                 <small className="m-0">
@@ -135,7 +135,7 @@ const Packages = () => (
         </div>
         <div className="col-lg-4 col-md-6 mb-4">
           <div className="package-item bg-white mb-2">
-            <Image width="100" height="100" className="img-fluid w-[100%]" src="/img/package-5.jpg" alt="" />
+            <Image width="100" height="100" className="img-fluid w-100" src="/img/package-5.jpg" alt="" />
             <div className="p-4">
               <div className="d-flex justify-content-between mb-3">
                 <small className="m-0">
@@ -166,7 +166,7 @@ const Packages = () => (
         </div>
         <div className="col-lg-4 col-md-6 mb-4">
           <div className="package-item bg-white mb-2">
-            <Image width="100" height="100" className="img-fluid w-[100%]" src="/img/package-6.jpg" alt="" />
+            <Image width="100" height="100" className="img-fluid w-100" src="/img/package-6.jpg" alt="" />
             <div className="p-4">
               <div className="d-flex justify-content-between mb-3">
                 <small className="m-0">

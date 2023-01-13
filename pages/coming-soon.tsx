@@ -6,7 +6,7 @@ import bg from "../public/New-Wine-Realty_4-Bedroom-Semi-Detached-In-Ajah.jpg";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function ComingSoon() {
   return (
     <>
       <Head>

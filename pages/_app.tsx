@@ -8,6 +8,7 @@ import "../styles/fonts/font-awesome-4.7.0/css/font-awesome.min.css";
 import "../styles/coming-soon-css/main.css";
 import "../styles/coming-soon-css/util.css";
 import "../styles/vendor/animate/animate.css";
+import '../plugins/loader';
 
 import type { AppProps } from 'next/app'
 

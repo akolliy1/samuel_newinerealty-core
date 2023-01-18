@@ -1,10 +1,16 @@
 import Head from "next/head";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
 import { Inter } from "@next/font/google";
-import Script from "next/script";
 import bg from "../public/New-Wine-Realty_4-Bedroom-Semi-Detached-In-Ajah.jpg";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const DynamicPlugins = dynamic(() => import("../Components/Plugins/Plugins"), {
+  loading: () => <p>...</p>,
+  ssr: false,
+});
 
 export default function Home() {
   return (
@@ -15,6 +21,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <DynamicPlugins />
       <main className="size1 bg-white where1-parent">
         <div
           className="flex-c-m bg-img1 size2 where1 overlay1 where2 respon2"
@@ -61,8 +68,10 @@ export default function Home() {
               We are <span className="m1-txt2">upgrading</span> to serve you
               better.
             </p>
-            <p className="text-md p-b-20">For inquiries on our latest listing, kindly fill out the form
-              below.</p>
+            <p className="text-md p-b-20">
+              For inquiries on our latest listing, kindly fill out the form
+              below.
+            </p>
 
             <form className="contact100-form validate-form">
               <div
@@ -139,18 +148,6 @@ export default function Home() {
             </a>
           </div>
         </div>
-
-        {/* <Script src="../styles/vendor/jquery/jquery-3.2.1.min.js"></Script> */}
-        <Script src="https://code.jquery.com/jquery-3.4.1.min.js"></Script>
-        <Script src="../styles/vendor/bootstrap/js/popper.js"></Script>
-        <Script src="../styles/vendor/bootstrap/js/bootstrap.min.js"></Script>
-        <Script src="../styles/vendor/select2/select2.min.js"></Script>
-        <Script src="../styles/vendor/countdowntime/moment.min.js"></Script>
-        <Script src="../styles/vendor/countdowntime/moment-timezone.min.js"></Script>
-        <Script src="../styles/vendor/countdowntime/moment-timezone-with-data.min.js"></Script>
-        <Script src="../styles/vendor/countdowntime/countdowntime.js"></Script>
-        <Script src="../styles/vendor/tilt/tilt.jquery.min.js"></Script>
-        <Script src="../styles/vendor/js/main.js"></Script>
       </main>
     </>
   );

@@ -22,13 +22,10 @@ const About = () => (
               About Us
             </h6>
             <h1 className="mb-3">
-              We Provide Best Tour Packages In Your Budget
+              New Wine Realty - Nigeria&rsquo;s Most Trusted Real Estate Company
             </h1>
             <p>
-              Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore
-              sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet
-              dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed
-              diam duo
+              At New Wine Realty, we provide unique housing solutions with a host of highly secured and profitable real estate investment opportunities.
             </p>
             <div className="row mb-4">
               <div className="col-6">

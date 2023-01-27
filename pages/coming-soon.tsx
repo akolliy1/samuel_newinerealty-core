@@ -51,7 +51,7 @@ export default function ComingSoon() {
             <Image
               width="150"
               height="100"
-              src="/favicon-transparent-crop.png"
+              src="/New_Wine_Realty_Transparent_White.png"
               alt="LOGO"
             />
           </div>

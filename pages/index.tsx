@@ -6,6 +6,7 @@ import type { GetServerSideProps } from "next";
 import { Inter } from "@next/font/google";
 import bg from "../public/New-Wine-Realty_4-Bedroom-Semi-Detached-In-Ajah.jpg";
 import prisma from '../lib/prisma'
+import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,13 +23,20 @@ const DynamicPlugins = dynamic(() => import("../Components/Plugins/Plugins"), {
 // };
 
 export default function Home() {
+  const [state, setState] = useState({});
+
+  const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
+    setState((prevState) => ({ ...prevState, [name]: value }));
+  }
+
   return (
     <>
       <Head>
         <title>New Wine Realty - Nigeria&apos;s Most Trusted Real Estate Company</title>
         <meta name="description" content="At New Wine Realty, we provide unique housing solutions with a host of highly secured and profitable real estate investment opportunities." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/New_Wine_Realty_Transparent_White.png" />
+        <link rel="icon" href="/New Wine Realty_Nigeria's Most Trusted Real Estate Company.ico" />
       </Head>
       <DynamicPlugins />
       <main className="size1 bg-white where1-parent">
@@ -91,6 +99,7 @@ export default function Home() {
                   className="s2-txt1 placeholder0 input100"
                   type="text"
                   name="name"
+                  onChange={onChange}
                   placeholder="Your Name"
                 />
                 <span className="focus-input100"></span>
@@ -104,6 +113,7 @@ export default function Home() {
                   className="s2-txt1 placeholder0 input100"
                   type="text"
                   name="email"
+                  onChange={onChange}
                   placeholder="Email Address"
                 />
                 <span className="focus-input100"></span>
@@ -116,6 +126,7 @@ export default function Home() {
                 <input
                   className="s2-txt1 placeholder0 input100"
                   type="text"
+                  onChange={onChange}
                   name="phone-number"
                   placeholder="Phone Number"
                 />

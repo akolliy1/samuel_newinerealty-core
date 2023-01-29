@@ -20,7 +20,9 @@ CREATE TABLE "Contact" (
     "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     "name" TEXT NOT NULL,
     "email" TEXT NOT NULL,
-    "phone" TEXT NOT NULL
+    "phone" TEXT NOT NULL,
+    "susbcribe" BOOLEAN NOT NULL DEFAULT true,
+    "softDelete" BOOLEAN NOT NULL DEFAULT false
 );
 
 -- CreateTable
@@ -34,3 +36,12 @@ CREATE TABLE "Maintenance" (
 
 -- CreateIndex
 CREATE UNIQUE INDEX "User_email_key" ON "User"("email");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "Contact_email_key" ON "Contact"("email");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "Maintenance_name_key" ON "Maintenance"("name");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "Maintenance_type_key" ON "Maintenance"("type");

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const Plugins = () => {
+const Plugins = ({ minutes, hours, days, seconds }) => {
   useEffect(() => {
     // window.jQuery = require("../../styles/vendor/jquery/jquery-3.2.1.min.js");
     window.Popper = require("../../styles/vendor/bootstrap/js/popper.js");
@@ -16,10 +16,10 @@ const Plugins = () => {
       /*Endtime must be > current time*/
       endtimeYear: 0,
       endtimeMonth: 0,
-      endtimeDate: 35,
-      endtimeHours: 18,
-      endtimeMinutes: 0,
-      endtimeSeconds: 0,
+      endtimeDate: days,
+      endtimeHours: hours,
+      endtimeMinutes: minutes,
+      endtimeSeconds: seconds,
       timeZone: "",
       // ex:  timeZone: "America/New_York"
       //go to " http://momentjs.com/timezone/ " to get timezone
@@ -39,7 +39,7 @@ const Plugins = () => {
       });
       /*==================================================================
     [ Validate ]*/
-      var input = $(".validate-input .input100");
+      var input = $(".validate-input .input100", ".validate-input .PhoneInputInput");
 
       $(".validate-form").on("submit", function () {
         var check = true;
@@ -54,7 +54,7 @@ const Plugins = () => {
         return check;
       });
 
-      $(".validate-form .input100").each(function () {
+      $(".validate-form .input100", ".validate-form .PhoneInputInput").each(function () {
         $(this).focus(function () {
           hideValidate(this);
         });

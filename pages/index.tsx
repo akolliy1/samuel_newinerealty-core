@@ -1,12 +1,19 @@
+import React from "react";
 import Head from "next/head";
 import Image from "next/image";
+import Router from "next/router";
+import { useForm, Path, UseFormRegister, SubmitHandler } from "react-hook-form";
 import dynamic from "next/dynamic";
 import type { GetServerSideProps } from "next";
-
+import moment from "moment";
+// import PhoneInput from "react-phone-number-input";
+import PhoneInputWithCountry from "react-phone-number-input/react-hook-form";
+import Yippey from "../Components/home/Yippey/Yippey";
+//
 import { Inter } from "@next/font/google";
 import bg from "../public/New-Wine-Realty_4-Bedroom-Semi-Detached-In-Ajah.jpg";
-import prisma from '../lib/prisma'
-import { useState } from "react";
+import prisma from "../lib/prisma";
+import { InputHTMLAttributes, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,30 +22,140 @@ const DynamicPlugins = dynamic(() => import("../Components/Plugins/Plugins"), {
   ssr: false,
 });
 
-// export const getServerSideProps: GetServerSideProps = async () => {
-//   const feed = await prisma.contact.create({});
-//   return {
-//     props: { feed },
-//   };
-// };
+export const getServerSideProps: GetServerSideProps = async () => {
+  const maintenance = await prisma.maintenance.findUnique({
+    where: { type: "upgrade" },
+  });
 
-export default function Home() {
-  const [state, setState] = useState({});
+  type Data = {
+    name: string;
+    type: string;
+    startDate: Date;
+    endDate: Date;
+  };
 
-  const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = event.target;
-    setState((prevState) => ({ ...prevState, [name]: value }));
+  console.log('maintenance', maintenance)
+
+  if (maintenance) {
+    const { startDate, endDate }: Data = maintenance;
+
+    var a = moment(new Date()); // moment("2016-06-06T21:03:55")
+    var b = moment(endDate);
+
+    // const minutes = b.diff(a, "minutes"); // 44700
+    // const hours = b.diff(a, "hours"); // 745
+    // const days = b.diff(a, "days"); // 31
+    const weeks = b.diff(a, "weeks"); // 4
+    const diff_s = b.diff(a, 'seconds');
+    // console.log()
+    const date = moment.utc(moment.duration(diff_s, "seconds").asMilliseconds()).format("DD:hh:mm:ss");
+    console.log('date', date)
+    const [days, hours, minutes, seconds] = date.split(':')
+
+    console.log(`minutes, hours, days, weeks`, minutes, hours, days, weeks)
+
+    return {
+      props: { seconds, minutes, hours, days, weeks },
+    };
   }
+
+  return {
+    props: { feed: "feed" },
+  };
+};
+
+interface IFormValues {
+  "First Name": string;
+  phone: string;
+  Age: number;
+}
+interface IData {
+  phone: string;
+  name: string;
+  email: string;
+}
+
+type InputProps = {
+  label: Path<IFormValues>;
+  register: UseFormRegister<IFormValues>;
+  required: boolean;
+};
+
+// The following component is an example of your existing Input Component
+const Input = ({ label, register, required }: InputProps) => (
+  <>
+    <label>{label}</label>
+    <input {...register(label, { required })} />
+  </>
+);
+
+type propsData = {
+  seconds: string,
+  minutes: string;
+  hours: string;
+  days: string;
+  weeks: number;
+};
+
+export default function Home({ seconds, minutes, hours, days, weeks }: propsData) {
+  // const [state, setState] = useState({});
+  const { control, register, handleSubmit } = useForm({
+    defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+    },
+  });
+
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+  });
+  const [sent, setSend] = useState(false);
+  const [isLoading, setLoading] = useState(false);
+
+  // const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   const { name, value } = event.target;
+  //   setState((prevState) => ({ ...prevState, [name]: value }));
+  // }
+
+  const onSubmit = async (formData: any) => {
+    setLoading(true);
+    try {
+      await fetch(`/api/contact`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      setLoading(false);
+      setSend(true);
+      setData(formData);
+      // await Router.push("/drafts");
+    } catch (error) {
+      setSend(false);
+      setLoading(false);
+      console.error(error);
+    }
+  };
 
   return (
     <>
       <Head>
-        <title>New Wine Realty - Nigeria&apos;s Most Trusted Real Estate Company</title>
-        <meta name="description" content="At New Wine Realty, we provide unique housing solutions with a host of highly secured and profitable real estate investment opportunities." />
+        <title>
+          New Wine Realty - Nigeria&apos;s Most Trusted Real Estate Company
+        </title>
+        <meta
+          name="description"
+          content="At New Wine Realty, we provide unique housing solutions with a host of highly secured and profitable real estate investment opportunities."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/New Wine Realty_Nigeria's Most Trusted Real Estate Company.ico" />
+        <link
+          rel="icon"
+          href="/New Wine Realty_Nigeria's Most Trusted Real Estate Company.ico"
+        />
       </Head>
-      <DynamicPlugins />
+      <DynamicPlugins days={days} hours={hours} minutes={minutes} seconds={seconds} />
       <main className="size1 bg-white where1-parent">
         <div
           className="flex-c-m bg-img1 size2 where1 overlay1 where2 respon2"
@@ -50,22 +167,22 @@ export default function Home() {
         >
           <div className="wsize2 flex-w flex-c-m cd100 js-tilt">
             <div className="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-              <span className="l2-txt1 p-b-9 days">35</span>
+              <span className="l2-txt1 p-b-9 days">{days}</span>
               <span className="s2-txt4">Days</span>
             </div>
 
             <div className="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-              <span className="l2-txt1 p-b-9 hours">17</span>
+              <span className="l2-txt1 p-b-9 hours">{hours}</span>
               <span className="s2-txt4">Hours</span>
             </div>
 
             <div className="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-              <span className="l2-txt1 p-b-9 minutes">50</span>
+              <span className="l2-txt1 p-b-9 minutes">{minutes}</span>
               <span className="s2-txt4">Minutes</span>
             </div>
 
             <div className="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-              <span className="l2-txt1 p-b-9 seconds">39</span>
+              <span className="l2-txt1 p-b-9 seconds">{weeks}</span>
               <span className="s2-txt4">Seconds</span>
             </div>
           </div>
@@ -86,11 +203,18 @@ export default function Home() {
               better.
             </p>
             <p className="text-md p-b-20">
-              For inquiries on our latest listing, kindly fill out the form
-              below.
+              For inquiries on our latest listing,{" "}
+              {sent
+                ? `you have filled the form successfully`
+                : `kindly fill out the form
+              below.`}
             </p>
 
-            <form className="contact100-form validate-form">
+            <form
+              hidden={sent}
+              onSubmit={handleSubmit(onSubmit)}
+              className="contact100-form validate-form"
+            >
               <div
                 className="wrap-input100 m-b-10 validate-input"
                 data-validate="Name is required"
@@ -98,8 +222,7 @@ export default function Home() {
                 <input
                   className="s2-txt1 placeholder0 input100"
                   type="text"
-                  name="name"
-                  onChange={onChange}
+                  {...register("name")}
                   placeholder="Your Name"
                 />
                 <span className="focus-input100"></span>
@@ -111,34 +234,43 @@ export default function Home() {
               >
                 <input
                   className="s2-txt1 placeholder0 input100"
-                  type="text"
-                  name="email"
-                  onChange={onChange}
+                  {...register("email")}
+                  type="email"
                   placeholder="Email Address"
                 />
                 <span className="focus-input100"></span>
               </div>
-
+              {/* <Phone label="phone" register={register} required /> */}
               <div
                 className="wrap-input100 m-b-20 validate-input"
                 data-validate="Phone is required: 0903450933"
               >
-                <input
+                <PhoneInputWithCountry
                   className="s2-txt1 placeholder0 input100"
-                  type="text"
-                  onChange={onChange}
-                  name="phone-number"
-                  placeholder="Phone Number"
+                  placeholder="Enter phone number"
+                  name="phone"
+                  control={control}
+                  rules={{ required: true }}
                 />
                 <span className="focus-input100"></span>
               </div>
+              {/* <p>{data}</p> */}
 
               <div className="w-full">
-                <button className="flex-c-m s2-txt2 size4 bg1 bor1 hov1 trans-04">
-                  Subscribe
+                <button
+                  type="submit"
+                  disabled={isLoading || sent}
+                  className="flex-c-m s2-txt2 size4 bg1 bor1 hov1 trans-04"
+                >
+                  {isLoading ? `Processing ...` : "Subscribe"}
                 </button>
               </div>
             </form>
+            <Yippey
+              hidden={!sent}
+              title="Subscribed"
+              text={`${data.name} will be more than happy!`}
+            />
 
             <p className="s2-txt3 p-t-18">
               And don’t worry, we hate spam too! You can unsubcribe at anytime.

@@ -1,3 +1,4 @@
+import 'react-phone-number-input/style.css'
 import '../styles/globals.css'
 import '../styles/style.css';
 import '../styles/scss/style.scss';

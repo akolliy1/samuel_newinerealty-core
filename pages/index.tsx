@@ -34,7 +34,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
     endDate: Date;
   };
 
-  console.log('maintenance', maintenance)
+  console.log("maintenance", maintenance);
 
   if (maintenance) {
     const { startDate, endDate }: Data = maintenance;
@@ -46,13 +46,15 @@ export const getServerSideProps: GetServerSideProps = async () => {
     // const hours = b.diff(a, "hours"); // 745
     // const days = b.diff(a, "days"); // 31
     const weeks = b.diff(a, "weeks"); // 4
-    const diff_s = b.diff(a, 'seconds');
+    const diff_s = b.diff(a, "seconds");
     // console.log()
-    const date = moment.utc(moment.duration(diff_s, "seconds").asMilliseconds()).format("DD:hh:mm:ss");
-    console.log('date', date)
-    const [days, hours, minutes, seconds] = date.split(':')
+    const date = moment
+      .utc(moment.duration(diff_s, "seconds").asMilliseconds())
+      .format("DD:hh:mm:ss");
+    console.log("date", date);
+    const [days, hours, minutes, seconds] = date.split(":");
 
-    console.log(`minutes, hours, days, weeks`, minutes, hours, days, weeks)
+    console.log(`minutes, hours, days, weeks`, minutes, hours, days, weeks);
 
     return {
       props: { seconds, minutes, hours, days, weeks },
@@ -90,14 +92,20 @@ const Input = ({ label, register, required }: InputProps) => (
 );
 
 type propsData = {
-  seconds: string,
+  seconds: string;
   minutes: string;
   hours: string;
   days: string;
   weeks: number;
 };
 
-export default function Home({ seconds, minutes, hours, days, weeks }: propsData) {
+export default function Home({
+  seconds,
+  minutes,
+  hours,
+  days,
+  weeks,
+}: propsData) {
   // const [state, setState] = useState({});
   const { control, register, handleSubmit } = useForm({
     defaultValues: {
@@ -155,7 +163,12 @@ export default function Home({ seconds, minutes, hours, days, weeks }: propsData
           href="/New Wine Realty_Nigeria's Most Trusted Real Estate Company.ico"
         />
       </Head>
-      <DynamicPlugins days={days} hours={hours} minutes={minutes} seconds={seconds} />
+      <DynamicPlugins
+        days={days}
+        hours={hours}
+        minutes={minutes}
+        seconds={seconds}
+      />
       <main className="size1 bg-white where1-parent">
         <div
           className="flex-c-m bg-img1 size2 where1 overlay1 where2 respon2"

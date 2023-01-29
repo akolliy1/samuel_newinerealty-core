@@ -16,10 +16,10 @@ const Plugins = ({ minutes, hours, days, seconds }) => {
       /*Endtime must be > current time*/
       endtimeYear: 0,
       endtimeMonth: 0,
-      endtimeDate: days,
-      endtimeHours: hours,
-      endtimeMinutes: minutes,
-      endtimeSeconds: seconds,
+      endtimeDate: days || 28,
+      endtimeHours: hours || 9,
+      endtimeMinutes: minutes || 0,
+      endtimeSeconds: seconds || 0,
       timeZone: "",
       // ex:  timeZone: "America/New_York"
       //go to " http://momentjs.com/timezone/ " to get timezone

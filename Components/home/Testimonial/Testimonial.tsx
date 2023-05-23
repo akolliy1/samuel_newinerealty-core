@@ -8,7 +8,7 @@ const Testimonial = () => (
         <h6 className="text-primary text-uppercase tracking-[5px]">
           Testimonial
         </h6>
-        <h1>What Say Our Clients</h1>
+        <h1>What Our Clients are Saying</h1>
       </div>
       <div className="owl-carousel testimonial-carousel">
         <div className="text-center pb-4">

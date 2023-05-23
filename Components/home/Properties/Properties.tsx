@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
 
-const Packages = () => (
+const Properties = () => (
   <div className="container-fluid py-5">
     <div className="container pt-5 pb-3">
       <div className="text-center mb-3 pb-3">
-        <h6 className="text-primary text-uppercase tracking=[5px]">Packages</h6>
-        <h1>Pefect Tour Packages</h1>
+        <h6 className="text-primary text-uppercase tracking=[5px]">Properties</h6>
+        <h1>View Our Exclusive Properties</h1>
       </div>
       <div className="row">
         <div className="col-lg-4 col-md-6 mb-4">
@@ -200,4 +200,4 @@ const Packages = () => (
   </div>
 );
 
-export default Packages;
+export default Properties;

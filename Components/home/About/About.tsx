@@ -11,8 +11,8 @@ const About = () => (
               className="position-absolute w-100 h-100 object-cover"
               alt="about"
               src="/img/about.jpg"
-              width="500"
-              height="500"
+              width="1000"
+              height="1500"
             />
           </div>
         </div>
@@ -25,18 +25,18 @@ const About = () => (
               New Wine Realty - Nigeria&rsquo;s Most Trusted Real Estate Company
             </h1>
             <p>
-              At New Wine Realty, we provide unique housing solutions with a host of highly secured and profitable real estate investment opportunities.
+              At New Wine Realty, we offer the most safest & secured housing solutions and profitable real estate investment opportunities. Our utmost goal is to walk you through your home ownership journey in the most seamless and effective way.
             </p>
-            <div className="row mb-4">
+            {/* <div className="row mb-4">
               <div className="col-6">
                 <Image width="500" height="100" className="img-fluid" src="/img/about-1.jpg" alt="" />
               </div>
               <div className="col-6">
                 <Image width="500" height="100" className="img-fluid" src="/img/about-2.jpg" alt="" />
               </div>
-            </div>
+            </div> */}
             <a href="" className="btn btn-primary mt-1">
-              Book Now
+              Learn more
             </a>
           </div>
         </div>

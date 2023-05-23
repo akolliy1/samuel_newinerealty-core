@@ -3,6 +3,7 @@ import '../styles/globals.css'
 import '../styles/style.css';
 import '../styles/scss/style.scss';
 import "../styles/lib/owlcarousel/assets/owl.carousel.min.css";
+import "../styles/lib/owlcarousel/assets/owl.theme.default.css";
 import "../styles/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css";
 
 import "../styles/fonts/font-awesome-4.7.0/css/font-awesome.min.css";

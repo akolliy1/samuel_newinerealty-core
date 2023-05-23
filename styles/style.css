@@ -3964,7 +3964,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #b11226;
   background-color: #F3F3F3;
   border-color: #dee2e6 #dee2e6 #F3F3F3;
 }
@@ -3976,7 +3976,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #7AB730;
+  background-color: #b11226;
 }
 
 .nav-fill > .nav-link,
@@ -9264,7 +9264,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #7AB730 !important;
+  color: #b11226 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {

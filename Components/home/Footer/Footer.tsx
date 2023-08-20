@@ -109,11 +109,11 @@ const Footer = () => (
             Contact Us
           </h5>
           <p>
-            <i className="fa fa-map-marker-alt mr-2"></i>123 Street, Lagos,
+            <i className="fa fa-map-marker mr-2"></i>123 Street, Lagos,
             Nigeria
           </p>
           <p>
-            <i className="fa fa-phone-alt mr-2"></i>+2348189861993, +2348150350306
+            <i className="fa fa-phone mr-2"></i>+2348189861993, +2348150350306
           </p>
           <p>
             <i className="fa fa-envelope mr-2"></i>newinerealty@gmail.com

@@ -170,7 +170,7 @@ const Registration = () => {
                 </div>
                 <div className="form-group">
                   <select className="custom-select px-4 h-[47px]" {...register("propertyType")}>
-                    <option value="" selected>Select Property Type</option>
+                    <option value="" defaultValue="">Select Property Type</option>
                     <option value="1">Flat</option>
                     <option value="2">Duplex</option>
                   </select>

@@ -12,7 +12,7 @@ const Teams = () => (
         <div className="col-lg-3 col-md-4 col-sm-6 pb-2">
           <div className="team-item bg-white mb-4">
             <div className="team-img position-relative overflow-hidden">
-              <Image data-aos="flip-right" data-aos-delay="1000" width="400" height="400" className="img-fluid w-100" src="/Meet_Our_Team/Samuel-Ishau_CEO-New-Wine-Realty.png" alt="" />
+              <Image data-aos="flip-right" data-aos-delay="1000" width="400" height="400" className="img-fluid w-100" src="https://res.cloudinary.com/deqt3envc/image/upload/v1692547276/Samuel-Ishau_CEO-New-Wine-Realty.png" alt="" />
               <div className="team-social">
                 {/* <a className="btn btn-outline-primary btn-square" href="">
                   <i className="fab fa-twitter"></i>
@@ -37,7 +37,7 @@ const Teams = () => (
         <div className="col-lg-3 col-md-4 col-sm-6 pb-2">
           <div className="team-item bg-white mb-4">
             <div className="team-img position-relative overflow-hidden">
-              <Image data-aos="flip-right" data-aos-delay="1000" width="400" height="400" className="img-fluid w-100" src="/Meet_Our_Team/Funmilayo-Okelola_HR-New-Wine-Realty.png" alt="" />
+              <Image data-aos="flip-right" data-aos-delay="1000" width="400" height="400" className="img-fluid w-100" src="https://res.cloudinary.com/deqt3envc/image/upload/v1692547266/Funmilayo-Okelola_HR-New-Wine-Realty.png" alt="" />
               <div className="team-social">
                 {/* <a className="btn btn-outline-primary btn-square" href="">
                   <i className="fab fa-twitter"></i>
@@ -62,7 +62,7 @@ const Teams = () => (
         <div className="col-lg-3 col-md-4 col-sm-6 pb-2">
           <div className="team-item bg-white mb-4">
             <div className="team-img position-relative overflow-hidden">
-              <Image data-aos="flip-right" data-aos-delay="1000" width="400" height="400" className="img-fluid w-100" src="/Meet_Our_Team/Akolade-Adesanmi_Software-Engineering-Head_New-Wine-Realty.png" alt="" />
+              <Image data-aos="flip-right" data-aos-delay="1000" width="400" height="400" className="img-fluid w-100" src="https://res.cloudinary.com/deqt3envc/image/upload/v1692547272/Akolade-Adesanmi_Software-Engineering-Head_New-Wine-Realty.png" alt="" />
               <div className="team-social">
                 {/* <a className="btn btn-outline-primary btn-square" href="">
                   <i className="fab fa-twitter"></i>

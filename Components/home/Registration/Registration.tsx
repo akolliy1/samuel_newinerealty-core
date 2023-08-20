@@ -87,11 +87,17 @@ const Registration = () => {
       <div className="row align-items-center">
         <div className="col-lg-7 mb-5 mb-lg-0">
           <div className="mb-4">
-            <h6 className="text-primary text-uppercase tracking-[5px]">
+            {/* <h6 className="text-primary text-uppercase tracking-[5px]">
+              FOR ENQUIRY:
+            </h6> */}
+            <h6 className="text-white text-uppercase tracking-[5px]">
               FOR ENQUIRY:
             </h6>
-            <h1 className="text-white">
+            {/* <h1 className="text-white">
               <span className="text-primary">Got Any Inquiry?</span> 
+            </h1> */}
+            <h1 className="text-white">
+              <span className="text-white">Got Any Inquiry?</span> 
             </h1>
           </div>
           <p className="text-white">

@@ -41,7 +41,7 @@ const Blog = () => (
                 </a>
               </div>
               <a className="h5 m-0 text-decoration-none" href="">
-                Dolor justo sea kasd lorem clita justo diam amet
+                Facts About Dangote Refinery
               </a>
             </div>
           </div>
@@ -78,7 +78,7 @@ const Blog = () => (
                 </a>
               </div>
               <a className="h5 m-0 text-decoration-none" href="">
-                Dolor justo sea kasd lorem clita justo diam amet
+                What Can I build on a Half Plot of Land 300sqm Land
               </a>
             </div>
           </div>
@@ -115,7 +115,7 @@ const Blog = () => (
                 </a>
               </div>
               <a className="h5 m-0 text-decoration-none" href="">
-                Dolor justo sea kasd lorem clita justo diam amet
+                Why Celebrities Invest in Real Estate
               </a>
             </div>
           </div>

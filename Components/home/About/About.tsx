@@ -1,8 +1,9 @@
 import Image from "next/image";
 import React from "react";
+import { Element } from "react-scroll";
 
 const About = () => (
-  <div data-aos="fade-down" className="container-fluid py-5">
+  <Element name="about-us" data-aos="fade-down" className="container-fluid py-5">
     <div className="container pt-5">
       <div className="row">
         <div className="col-lg-6 min-h-[500px]">
@@ -42,7 +43,7 @@ const About = () => (
         </div>
       </div>
     </div>
-  </div>
+  </Element>
 );
 
 export default About;

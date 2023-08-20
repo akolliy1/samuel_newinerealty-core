@@ -84,7 +84,7 @@ const Navbar = () => {
                 to="about-us"
                 spy={true}
                 smooth={true}
-                offset={-200}
+                offset={150}
                 duration={500}
                 delay={1000}
               >

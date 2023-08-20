@@ -31,3 +31,7 @@
   transform-origin: center 0;
   animation: shake 0.6s;
 }
+
+.Yippey p {
+  color: black
+}

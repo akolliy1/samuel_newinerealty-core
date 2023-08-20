@@ -14,9 +14,9 @@ const Blog = () => (
             <div className="position-relative">
               <Image
                 className="img-fluid w-100"
-                src="/img/blog-1.jpg"
+                src="/Blog/Facts-About-Dangote-Refinery_New-Wine-Realty_Samuel-Ishau.jpg"
                 alt="blog-img"
-                width="100"
+                width="250"
                 height="100"
               />
               <div className="blog-date">
@@ -51,9 +51,9 @@ const Blog = () => (
             <div className="position-relative">
               <Image
                 className="img-fluid w-100"
-                src="/img/blog-2.jpg"
+                src="/Blog/What-Can-I-build-on-a-Half-Plot-of-Land_300sqm-Land_New-Wine-Realty.jpg"
                 alt="blog-img"
-                width="100"
+                width="250"
                 height="100"
               />
               <div className="blog-date">
@@ -88,9 +88,9 @@ const Blog = () => (
             <div className="position-relative">
               <Image
                 className="img-fluid w-100"
-                src="/img/blog-3.jpg"
+                src="/Blog/Why-Celebrities-Invest-in-Real-Estate_New-Wine-Realty.jpg"
                 alt="blog-img"
-                width="100"
+                width="250"
                 height="100"
               />
               <div className="blog-date">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Footer = () => (
@@ -9,12 +10,17 @@ const Footer = () => (
         <div className="col-lg-3 col-md-6 mb-5">
           <a href="" className="navbar-brand">
             <h1 className="text-primary">
-              <span className="text-white">TRAVEL</span>ER
+              {/* <span className="text-white">TRAVEL</span>ER */}
+              <Image
+                width="130"
+                height="100"
+                src="/New_Wine_Realty_White.png"
+                alt="LOGO"
+              />
             </h1>
           </a>
           <p>
-            Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore
-            rebum lorem ipsum dolor. No sed vero lorem dolor dolor
+            At New Wine Realty, we offer the most safest & secured housing solutions and profitable real estate investment opportunities. Our utmost goal is to walk you through your home ownership journey in the most seamless and effective way
           </p>
           <h6
             className="text-white text-uppercase mt-4 mb-3 tracking-[5px]"
@@ -22,22 +28,22 @@ const Footer = () => (
             Follow Us
           </h6>
           <div className="d-flex justify-content-start">
-            <a className="btn btn-outline-primary btn-square mr-2" href="#">
-              <i className="fab fa-twitter"></i>
+            <a className="btn btn-outline-primary btn-square mr-2" target="_blank" rel="noreferrer" href="https://www.youtube.com/@newwinerealty/">
+              <i className="fab fa-youtube"></i>
             </a>
-            <a className="btn btn-outline-primary btn-square mr-2" href="#">
+            <a className="btn btn-outline-primary btn-square mr-2" target="_blank" rel="noreferrer" href="https://www.facebook.com/newinerealty">
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a className="btn btn-outline-primary btn-square mr-2" href="#">
+            <a className="btn btn-outline-primary btn-square mr-2" target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/new-wine-realty">
               <i className="fab fa-linkedin-in"></i>
             </a>
-            <a className="btn btn-outline-primary btn-square" href="#">
+            <a className="btn btn-outline-primary btn-square" target="_blank" rel="noreferrer" href="https://www.instagram.com/newinerealty/">
               <i className="fab fa-instagram"></i>
             </a>
           </div>
         </div>
         <div className="col-lg-3 col-md-6 mb-5">
-          <h5
+          {/* <h5
             className="text-white text-uppercase mb-4 tracking-[5px]"
           >
             Our Services
@@ -64,10 +70,10 @@ const Footer = () => (
             <a className="text-white-50" href="#">
               <i className="fa fa-angle-right mr-2"></i>Blog
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="col-lg-3 col-md-6 mb-5">
-          <h5
+          {/* <h5
             className="text-white text-uppercase mb-4 tracking-[5px]"
           >
             Usefull Links
@@ -94,7 +100,7 @@ const Footer = () => (
             <a className="text-white-50" href="#">
               <i className="fa fa-angle-right mr-2"></i>Blog
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="col-lg-3 col-md-6 mb-5">
           <h5
@@ -103,14 +109,14 @@ const Footer = () => (
             Contact Us
           </h5>
           <p>
-            <i className="fa fa-map-marker-alt mr-2"></i>123 Street, New York,
-            USA
+            <i className="fa fa-map-marker-alt mr-2"></i>123 Street, Lagos,
+            Nigeria
           </p>
           <p>
-            <i className="fa fa-phone-alt mr-2"></i>+012 345 67890
+            <i className="fa fa-phone-alt mr-2"></i>+2348189861993, +2348150350306
           </p>
           <p>
-            <i className="fa fa-envelope mr-2"></i>info@example.com
+            <i className="fa fa-envelope mr-2"></i>newinerealty@gmail.com
           </p>
           <h6
             className="text-white text-uppercase mt-4 mb-3 tracking-[5px]"
@@ -136,13 +142,13 @@ const Footer = () => (
       <div className="row">
         <div className="col-lg-6 text-center text-md-left mb-3 mb-md-0">
           <p className="m-0 text-white-50">
-            Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.
+            Copyright &copy; <a href="#">Newinerealty.com</a>. All Rights Reserved.
           </p>
         </div>
         <div className="col-lg-6 text-center text-md-right">
-          <p className="m-0 text-white-50">
+          {/* <p className="m-0 text-white-50">
             Designed by <a href="https://htmlcodex.com">HTML Codex</a>
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { IoShieldCheckmark } from 'react-icons/io5';
 
 const Features = () => (
-  <div className="container-fluid pb-5">
+  <div data-aos="fade-up" className="container-fluid pb-5">
     <div className="container pb-5">
       <div className="row">
         <div className="col-md-4">

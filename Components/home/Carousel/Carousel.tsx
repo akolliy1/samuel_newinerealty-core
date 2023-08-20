@@ -2,10 +2,15 @@ import Image from "next/image";
 import React from "react";
 
 const Carousel = () => (
-  <div className="container-fluid p-0">
+  <div data-aos="fade-up" className="container-fluid p-0">
     <div id="header-carousel" className="carousel slide" data-ride="carousel">
       <div className="carousel-inner">
-        <div className="carousel-item active">
+        <div className="carousel-item active position-relative">
+          <div className="star"></div>
+          <div className="star">
+            <div className="star1"></div>
+            <div className="star2"></div>
+          </div>
           <Image width="1920" height="1080" className="w-100" src="/New-Wine-Realty_-Nigeria-Most-Trusted-Real-Estate-Company.jpeg" alt="New-Wine-Realty_-Nigeria-Most-Trusted-Real-Estate-Company" />
           <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
             <div className="p-3 max-w-[900px]">

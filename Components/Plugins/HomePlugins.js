@@ -43,9 +43,9 @@ const HomePlugins = () => {
         992: {
           items: 3
         },
-        1300: {
-          items: 5
-        }
+        // 1300: {
+        //   items: 5
+        // }
       }
     });
 

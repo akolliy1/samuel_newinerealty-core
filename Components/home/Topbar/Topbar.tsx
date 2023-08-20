@@ -1,7 +1,7 @@
 import React from "react";
 
 const Topbar = () => (
-  <div className="container-fluid bg-light pt-3 d-none d-lg-block">
+  <div data-aos="fade-up" className="container-fluid bg-light pt-3 d-none d-lg-block">
     <div className="container">
       <div className="row">
         <div className="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
@@ -17,19 +17,19 @@ const Topbar = () => (
         </div>
         <div className="col-lg-6 text-center text-lg-right">
           <div className="d-inline-flex align-items-center">
-            <a className="text-primary px-3" target="_blank" href="https://www.facebook.com/newinerealty">
+            <a className="text-primary px-3" target="_blank" href="https://www.facebook.com/newinerealty" rel="noreferrer">
               <i className="fab fa-facebook-f"></i>
             </a>
             {/* <a className="text-primary px-3" href="">
               <i className="fab fa-twitter"></i>
             </a> */}
-            <a className="text-primary px-3" target="_blank" href="https://www.linkedin.com/company/new-wine-realty/">
+            <a className="text-primary px-3" target="_blank" href="https://www.linkedin.com/company/new-wine-realty/" rel="noreferrer">
               <i className="fab fa-linkedin-in"></i>
             </a>
-            <a className="text-primary px-3" target="_blank" href="https://www.instagram.com/newinerealty/">
+            <a className="text-primary px-3" target="_blank" href="https://www.instagram.com/newinerealty/" rel="noreferrer">
               <i className="fab fa-instagram"></i>
             </a>
-            <a className="text-primary pl-3" target="_blank" href="https://www.youtube.com/@newwinerealty/">
+            <a className="text-primary pl-3" target="_blank" href="https://www.youtube.com/@newwinerealty/" rel="noreferrer">
               <i className="fab fa-youtube"></i>
             </a>
           </div>

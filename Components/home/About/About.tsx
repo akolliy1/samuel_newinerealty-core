@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const About = () => (
-  <div className="container-fluid py-5">
+  <div data-aos="fade-down" className="container-fluid py-5">
     <div className="container pt-5">
       <div className="row">
         <div className="col-lg-6 min-h-[500px]">
@@ -16,7 +16,7 @@ const About = () => (
             />
           </div>
         </div>
-        <div className="col-lg-6 pt-5 pb-lg-5">
+        <div data-aos="slide-left" className="col-lg-6 pt-5 pb-lg-5">
           <div className="about-text bg-white p-4 p-lg-5 my-lg-5">
             <h6 className="text-primary text-uppercase tracking-[5px]">
               About Us

@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const Destination = () => (
-  <div className="container-fluid py-5">
+  <div data-aos="zoom-in" data-aos-delay="1200" className="container-fluid py-5">
     <div className="container pt-5 pb-3">
       <div className="text-center mb-3 pb-3">
         <h1>Browse by Neighbourhoods</h1>
@@ -13,7 +13,7 @@ const Destination = () => (
       <div className="row">
         <div className="col-lg-4 col-md-6 mb-4">
           <div className="destination-item position-relative overflow-hidden mb-2">
-            <Image width="600" height="400" className="img-fluid w-100" src="/neighbourhood/House-in-Nigeria.jpeg" alt="" />
+            <Image width="600" height="400" className="img-fluid w-100" src="/Browse_Our_Neighbourhood/House-in-Nigeria.jpg" alt="" />
             <a
               className="destination-overlay text-white text-decoration-none"
               href=""
@@ -25,7 +25,7 @@ const Destination = () => (
         </div>
         <div className="col-lg-4 col-md-6 mb-4">
           <div className="destination-item position-relative overflow-hidden mb-2">
-            <Image width="600" height="400" className="img-fluid w-100" src="/neighbourhood/Apartments-in-Nigeria.jpeg" alt="" />
+            <Image width="600" height="400" className="img-fluid w-100" src="/Browse_Our_Neighbourhood/Apartments-in-Nigeria.jpg" alt="" />
             <a
               className="destination-overlay text-white text-decoration-none"
               href=""
@@ -37,7 +37,7 @@ const Destination = () => (
         </div>
         <div className="col-lg-4 col-md-6 mb-4">
           <div className="destination-item position-relative overflow-hidden mb-2">
-            <Image width="600" height="400" className="img-fluid w-100" src="/neighbourhood/Houses-in-Nigeria_New-Wine-Realty.jpeg" alt="" />
+            <Image width="600" height="400" className="img-fluid w-100" src="/Browse_Our_Neighbourhood/Houses-in-Nigeria_New-Wine-Realty.jpg" alt="" />
             <a
               className="destination-overlay text-white text-decoration-none"
               href=""
@@ -49,7 +49,7 @@ const Destination = () => (
         </div>
         <div className="col-lg-4 col-md-6 mb-4">
           <div className="destination-item position-relative overflow-hidden mb-2">
-            <Image width="600" height="400" className="img-fluid w-100" src="/neighbourhood/Apartment-in-Nigeria.jpeg" alt="" />
+            <Image width="600" height="400" className="img-fluid w-100" src="/Browse_Our_Neighbourhood/Apartment-in-Nigeria.jpg" alt="" />
             <a
               className="destination-overlay text-white text-decoration-none"
               href=""
@@ -61,7 +61,7 @@ const Destination = () => (
         </div>
         <div className="col-lg-4 col-md-6 mb-4">
           <div className="destination-item position-relative overflow-hidden mb-2">
-            <Image width="600" height="400" className="img-fluid w-100" src="/neighbourhood/House-For-Sale-in-Nigeria.jpeg" alt="" />
+            <Image width="600" height="400" className="img-fluid w-100" src="/Browse_Our_Neighbourhood/House-For-Sale-in-Nigeria.jpg" alt="" />
             <a
               className="destination-overlay text-white text-decoration-none"
               href=""
@@ -73,7 +73,7 @@ const Destination = () => (
         </div>
         <div className="col-lg-4 col-md-6 mb-4">
           <div className="destination-item position-relative overflow-hidden mb-2">
-            <Image width="600" height="400" className="img-fluid w-100" src="/neighbourhood/Nigerian-Houses.jpeg" alt="" />
+            <Image width="600" height="400" className="img-fluid w-100" src="/Browse_Our_Neighbourhood/Nigerian-Houses.jpg" alt="" />
             <a
               className="destination-overlay text-white text-decoration-none"
               href=""

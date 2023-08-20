@@ -94,7 +94,7 @@ const Plugins = ({ minutes, hours, days, seconds }) => {
         $(thisAlert).removeClass("alert-validate");
       }
     })(jQuery || window.jQuery);
-  }, []);
+  }, [days, hours, minutes, seconds]);
 
   return <div />;
 };

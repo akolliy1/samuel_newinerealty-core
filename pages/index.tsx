@@ -42,7 +42,8 @@ export default function Home() {
         {/* <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
         <link href="/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" /> */}
       </Head>
-      <main className={styles.main}>
+      {/* <main className={styles.main}> */}
+      <main className="w-100 overflow-x-hidden">
         <Topbar />
         <Navbar />
         <Carousel />

@@ -11,7 +11,7 @@ const Carousel = () => (
             <div className="star1"></div>
             <div className="star2"></div>
           </div>
-          <Image width="1920" height="1080" className="w-100" src="/New-Wine-Realty_-Nigeria-Most-Trusted-Real-Estate-Company.jpeg" alt="New-Wine-Realty_-Nigeria-Most-Trusted-Real-Estate-Company" />
+          <Image width="1920" height="1080" className="w-100 h-[650px] md:h-auto" src="/New-Wine-Realty_-Nigeria-Most-Trusted-Real-Estate-Company.jpeg" alt="New-Wine-Realty_-Nigeria-Most-Trusted-Real-Estate-Company" />
           <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
             <div className="p-3 max-w-[900px]">
               {/* <h4 className="text-white text-uppercase mb-md-3">

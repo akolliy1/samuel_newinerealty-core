@@ -62,7 +62,7 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            className="navbar-collapse justify-content-between px-3"
+            className="navbar-collapse justify-content-between px-3 collapse"
             id="navbarCollapse"
           >
             <div className="navbar-nav ml-auto py-0">

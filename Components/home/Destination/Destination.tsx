@@ -16,7 +16,7 @@ const Destination = () => (
             <Image width="600" height="400" className="img-fluid w-100" src="/Browse_Our_Neighbourhood/House-in-Nigeria.jpg" alt="" />
             <a
               className="destination-overlay text-white text-decoration-none"
-              href=""
+              href="https://properties.newinerealty.com/"
             >
               <h5 className="text-white">Lekki</h5>
               {/* <span>100 Cities</span> */}
@@ -28,7 +28,7 @@ const Destination = () => (
             <Image width="600" height="400" className="img-fluid w-100" src="/Browse_Our_Neighbourhood/Apartments-in-Nigeria.jpg" alt="" />
             <a
               className="destination-overlay text-white text-decoration-none"
-              href=""
+              href="https://properties.newinerealty.com/"
             >
               <h5 className="text-white">Ajah</h5>
               {/* <span>100 Cities</span> */}
@@ -40,7 +40,7 @@ const Destination = () => (
             <Image width="600" height="400" className="img-fluid w-100" src="/Browse_Our_Neighbourhood/Houses-in-Nigeria_New-Wine-Realty.jpg" alt="" />
             <a
               className="destination-overlay text-white text-decoration-none"
-              href=""
+              href="https://properties.newinerealty.com/"
             >
               <h5 className="text-white">Epe</h5>
               {/* <span>100 Cities</span> */}
@@ -52,7 +52,7 @@ const Destination = () => (
             <Image width="600" height="400" className="img-fluid w-100" src="/Browse_Our_Neighbourhood/Apartment-in-Nigeria.jpg" alt="" />
             <a
               className="destination-overlay text-white text-decoration-none"
-              href=""
+              href="https://properties.newinerealty.com/"
             >
               <h5 className="text-white">Lagos Mainland</h5>
               {/* <span>100 Cities</span> */}
@@ -64,7 +64,7 @@ const Destination = () => (
             <Image width="600" height="400" className="img-fluid w-100" src="/Browse_Our_Neighbourhood/House-For-Sale-in-Nigeria.jpg" alt="" />
             <a
               className="destination-overlay text-white text-decoration-none"
-              href=""
+              href="https://properties.newinerealty.com/"
             >
               <h5 className="text-white">Ibeju-Lekki</h5>
               {/* <span>100 Cities</span> */}
@@ -76,7 +76,7 @@ const Destination = () => (
             <Image width="600" height="400" className="img-fluid w-100" src="/Browse_Our_Neighbourhood/Nigerian-Houses.jpg" alt="" />
             <a
               className="destination-overlay text-white text-decoration-none"
-              href=""
+              href="https://properties.newinerealty.com/"
             >
               <h5 className="text-white">Victoria Island</h5>
               {/* <span>100 Cities</span> */}

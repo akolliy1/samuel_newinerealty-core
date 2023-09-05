@@ -26,7 +26,7 @@ const Properties = () => (
                   <i className="fa fa-user text-primary mr-2"></i>2 Person
                 </small>
               </div>
-              <a className="h5 text-decoration-none" href="">
+              <a className="h5 text-decoration-none" href="https://properties.newinerealty.com/">
                 Fairmont Green & Smart Estate
               </a>
               <div className="border-top mt-4 pt-4">
@@ -57,7 +57,7 @@ const Properties = () => (
                   <i className="fa fa-user text-primary mr-2"></i>2 Person
                 </small>
               </div>
-              <a className="h5 text-decoration-none" href="">
+              <a className="h5 text-decoration-none" href="https://properties.newinerealty.com/">
                 De Avocado Luxury Apartment
               </a>
               <div className="border-top mt-4 pt-4">
@@ -88,7 +88,7 @@ const Properties = () => (
                   <i className="fa fa-user text-primary mr-2"></i>2 Person
                 </small>
               </div>
-              <a className="h5 text-decoration-none" href="">
+              <a className="h5 text-decoration-none" href="https://properties.newinerealty.com/">
                 Discover amazing places of the world with us
               </a>
               <div className="border-top mt-4 pt-4">

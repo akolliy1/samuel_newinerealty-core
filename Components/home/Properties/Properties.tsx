@@ -26,7 +26,7 @@ const Properties = () => (
                   <i className="fa fa-user text-primary mr-2"></i>2 Person
                 </small>
               </div>
-              <a className="h5 text-decoration-none" href="https://properties.newinerealty.com/">
+              <a className="h5 text-decoration-none" href="https://fairmont.newinerealty.com/">
                 Fairmont Green & Smart Estate
               </a>
               <div className="border-top mt-4 pt-4">
@@ -57,7 +57,7 @@ const Properties = () => (
                   <i className="fa fa-user text-primary mr-2"></i>2 Person
                 </small>
               </div>
-              <a className="h5 text-decoration-none" href="https://properties.newinerealty.com/">
+              <a className="h5 text-decoration-none" href="https://daapt.newinerealty.com/">
                 De Avocado Luxury Apartment
               </a>
               <div className="border-top mt-4 pt-4">
@@ -79,7 +79,7 @@ const Properties = () => (
               <div className="d-flex justify-content-between mb-3">
                 <small className="m-0">
                   <i className="fa fa-map-marker text-primary mr-2"></i>
-                  Thailand
+                  Nigeria
                 </small>
                 <small className="m-0">
                   <i className="fa fa-calendar-alt text-primary mr-2"></i>3 days

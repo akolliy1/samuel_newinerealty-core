@@ -1,5 +1,5 @@
 import Image from "next/image";
-// import Link from "next/link";
+import NavLink from "next/link";
 import React from "react";
 import {
   Link,
@@ -102,18 +102,12 @@ const Navbar = () => {
               >
                 Contact
               </Link>
-              <Link
+              <NavLink
                 className="nav-item nav-link"
-                activeClass="active"
-                to="properties"
-                spy={true}
-                smooth={true}
-                offset={-400}
-                duration={500}
-                delay={1000}
+                href="https://properties.newinerealty.com"
               >
                 Properties
-              </Link>
+              </NavLink>
               {/* <Link href="/" className="nav-item nav-link active">
               Home
             </Link>
